@@ -20,14 +20,14 @@ if (isset($_SERVER['HTTP_ORIGIN'])) {
 	}
 
 
-	$botToken = "1139508413:AAGUXypuWl0vxBnLEVToVVI06VyndOsz4Qk";
+	$botToken = "1315148288:AAEkdHhmx4LtqUMafqc_2MiEgWLw5PGQR5U";
 	$website = "https://api.telegram.org/bot".$botToken;
 
-$chatId = "63658792";
+$chatId = "182851935";
 
-if(isset($_POST['name']) && trim($_POST['name']) !== '' && isset($_POST['Phone']) && trim($_POST['Phone']) !== '') {
+if(isset($_POST['name']) && trim($_POST['name']) !== '' && isset($_POST['phone']) && trim($_POST['phone']) !== '') {
 	$name = $_POST['name'];
-	$phone = $_POST['Phone'];
+	$phone = $_POST['phone'];
 
 	$answer = "Новая заявка с сайта!\n\n";
 	$answer .= "Имя: <b>$name</b>\n";
